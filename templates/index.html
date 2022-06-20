@@ -1,0 +1,307 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/products.css' %}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" media="screen"/>
+    </head>
+    <body>
+        <div class="main-container">
+        <!-- navbar -->
+        <div class="navbar-container">
+           <div class="logo-title">
+                <div class="logo"><img src="{% static '/assets/log1.png' %}"/></div>
+                <div class="title">Flores Innovative Solutions</div>
+           </div>
+            <svg id="menu-icon" onclick="show_hide_menu()" fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
+           <div id="btn-container" class="buttons-container">
+                <div  class="cross-ctn">
+                    <?xml version="1.0"?><svg  onclick="show_hide_menu()" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/></svg>
+                </div>
+                <!-- <div class="button">Home</div>
+                <div class="button">Products</div>
+                <div class="button">About Us</div>
+                <div class="button">Contact Us</div> -->
+                <a class="button" href="#home">Home</a>
+                <a class="button" href="#product">Products</a>
+                <a class="button" href="#about">About Us</a>
+                <a class="button" href="#contact">Contact Us</a>
+            </div>
+        </div>
+        <!-- slider -->
+        <div id="home" class="slider">
+		<!-- fade css -->
+		<div class="myslide"  style="display: block;">
+			<div class="txt">
+                <h1>Health Care</h1>
+				<p>Helping you focus on your patient</p>
+			</div>
+            <div class="fade">
+                <img src="{% static '/assets/assets/healthcare.jpg' %}"/>
+            <div class="fade2"></div>
+            </div>
+		</div>
+		
+		
+		<div class="myslide">
+			<div class="txt">
+                <h1>Artificial Intelligence[AI]</h1>
+				<p>A wide-ranging tool that enables people to rethink how we integrate information</p>
+			</div>
+            <div class="fade">
+			<img src="{% static 'assets/ai.jpg' %}" style="width: 100%; height: 100%;">
+            <div class="fade2"></div>
+            </div>
+		</div>
+		
+		<div class="myslide">
+			<div class="txt">
+                <h1>Secure Database</h1>
+				<p>All your data is stored on our secure server</p>
+			</div>
+            <div class="fade">
+			<img src="{% static 'assets/data1.jpg' %}" style="width: 100%; height: 100%;">
+            <div class="fade2"></div>
+            </div>
+
+		</div>
+		
+		<div class="myslide">
+			<div class="txt">
+                <h1>Tourism</h1>
+				<p>The travel and tourism industry, it's just a huge part of our economy</p>
+			</div>
+			<div class="fade">
+                <img src="{% static 'assets/assets/1.jpg' %}" style="width: 100%; height: 100%;">
+                <div class="fade2"></div>
+            </div>
+        </div>
+		</div>
+        <div class="pack">
+        <!-- product section -->
+        <section id="product" class="pro-container">
+            <div class="p-heading">Our Products</div>
+            <div class="products-container">
+                <div class="product">
+                    <img class="img-product" src="{% static '/assets/h.jpg' %}"/>
+                    <div class="content-box">
+                        <div class="content-heading">Health Care</div>
+                        <div class="content">
+                            We provide clinical management systems (CMS) for clinics and Hospital, which provides end to end services, provide web applications, website and mobile applications for hospitals and users like patients, physicians. We maintain clinics data and provide digital documentation to ease physician work ,make transparency and patient trust
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="img-product" src="{% static '/assets/ana.jpg' %}"/>
+                    <div class="content-box">
+                        <div class="content-heading">Analytics</div>
+                        <div class="content">
+                            We use emerging tools and technology to develop advanced analytics models.Flores Innovaative Solutions uses extensive market research and data formulation based on AI and ML algorithms to 
+                            pinpoint emerging trends and upcoming opportunities and tells the organization where and how to compete with data with a deep focus on healthcare.
+                            AI is poised to become a transformational force in healthcare as it targets full sight of solutions beyond the target range.
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="img-product" src="{% static '/assets/t.jpg' %}"/>
+                    <div class="content-box">
+                        <div class="content-heading">Tourism</div>
+                        <div class="content">
+                            Cities have an incredible wealth of information at their disposal that has the potential to transform the world of tourism. However, simply having information isn’t enough to be able to use it effectively. Cities and tourism players also need access to tools that will enable them to draw actionable conclusions from the data. Many of these conclusions will help them to benefit not just visitors, but also local residents, too.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-heading"> About Us</div>
+                <div class="flex">
+                <img src="{% static '/assets/9.jpg' %}"/>
+                <div class="about-content">
+                    Technologies is a young and rapidly growing team with a passion for leveraging on technology to solve healthcare issues. With an average age of less than 30 years old, the environment is fun and ever-evolving. We value outside of the box thinking and radical ideas to push the company forward. Independence and Entrepreneurial spirit are the core values we seek in our colleagues (we are not fans of mindless drones waiting for instructions!)<br>"Never doubt that a small group of thoughtful, committed people can change the world. Indeed. It is the only thing that ever has."
+                    -Margaret Mead
+                </div>
+                </div>
+            </div>
+                <div class="dummy">
+                    <div class="second-container">
+                        <div class="profile-container">
+                            <div class="profile-box">
+                                    <img src="{% static '/assets/suman.jpeg' %}" alt="profile pic"/>
+                                <div class="profile-name"></div>
+                                <div class="profile-quote">
+                                    Suman Dongala, CCS, CPMA, CDIP, CPHQ Trained<br>
+                                    -Founder and CEO at Flores Innovative Solutions
+                                </div>
+                                <div class="socialmedia-container">
+                                    <!-- <?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg> -->
+                                    <a href="https://www.instagram.com/dongalasuman/"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg></a>
+                                    <a href="https://www.linkedin.com/in/suman-dongala-ccs-cpma-cdip-cphq-trained-76745277/"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg></a>
+                                    <A href="https://twitter.com/dongalasuman?t=sneX5VWaFldXzEogx1VroA&s=09"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/></svg></a>
+                                    <!-- <?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"/></svg> -->
+                                </div>
+                            </div>
+                            <div class="profile-about">
+                                <!-- <h4>Story</h4> -->
+                                <p>"I believe in my calling as an CEO in this world to leverage technology and health care to enable development of various factors. With an augmenting human performance, AI adds on more value. It will be most effective when it enhances usability. <br> What i'm most excited about is it may not replace the doctors but for sure AI makes a huge impact in future to bring back the past"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-container">
+                        <div class="profile-container col">
+                            <div class="profile-box">
+                                    <img src="{% static '/assets/Lingaswamy.jpeg' %}" alt="profile pic"/>
+                                <div class="profile-name"></div>
+                                <div class="profile-quote">
+                                    Lingaswamy Dacharam,M.Tech,Data Scientist,AI-ML<br>
+                                    -Co Founder & COO at Flores Innovative Solutions
+                                </div>
+                                <div class="socialmedia-container">
+                                    <!-- <?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg> -->
+                                    <a href="https://www.instagram.com/thenameislingaswamy/"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg></a>
+                                    <a href="https://www.linkedin.com/in/lingaswamy-dacharam-923109147/"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg></a>
+                                    <a href="https://twitter.com/Lingaswami786?t=kEZ1w3nnLau3uf2FFv_IOg&s=09"<?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/></svg></a>
+                                    <!-- <?xml version="1.0"?><svg fill="#c5b2ec" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"/></svg> -->
+                                </div>
+                            </div>
+                            <div class="profile-about">
+                                <!-- <h4>Story</h4> -->
+                                <p>"According to me, Data science is more like a practice than a job. Using only, scientific methods to approach Data Analysis is something which makes more apt to be a successful programmer. It is an outcome-focused tech company that enables the coordination of healthcare websites and social service providers. By focusing on our glomorized website of this industry, We are able to design the customized products"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- contact form -->
+        <section id="contact" class="contact-container">
+            <div class="contact-heading">Contact Us</div>
+            <div class="cards-container">
+                <a target='_blank' href='https://goo.gl/maps/Kcn2sMthg1dqFfDH8'>
+                    
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="30px" height="30px"	 viewBox="0 0 264.018 264.018" style="enable-background:new 0 0 264.018 264.018;" xml:space="preserve">
+                    <g>
+	                <path d="M132.009,0c-42.66,0-77.366,34.706-77.366,77.366c0,11.634,2.52,22.815,7.488,33.24c0.1,0.223,0.205,0.442,0.317,0.661
+		                l58.454,113.179c2.146,4.154,6.431,6.764,11.106,6.764c4.676,0,8.961-2.609,11.106-6.764l58.438-113.148
+		                c0.101-0.195,0.195-0.392,0.285-0.591c5.001-10.455,7.536-21.67,7.536-33.341C209.375,34.706,174.669,0,132.009,0z
+		                M132.009,117.861c-22.329,0-40.495-18.166-40.495-40.495c0-22.328,18.166-40.494,40.495-40.494s40.495,18.166,40.495,40.494
+		                C172.504,99.695,154.338,117.861,132.009,117.861z"/>
+	                <path d="M161.81,249.018h-59.602c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5h59.602c4.143,0,7.5-3.357,7.5-7.5
+		                C169.31,252.375,165.952,249.018,161.81,249.018z"/>
+                    </g>
+                </svg>
+
+                    <h1 class="card-heading"> Location </h1>
+                    <div class="card-content">3rd floor, 12-5-32, St 7, Vijayapuri Colony, Tarnaka, Hyderabad, Telangana 500017</div>
+                </a>
+                <a href='tel:6303679126'>
+                <svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.942 53.942" width="25px" height="25px"	style="enable-background:new 0 0 53.942 53.942;" xml:space="preserve">
+                    <path d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.288-8.092c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68
+	                c-1.02,1.22-2.285,2.646-2.592,2.867c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,24.467c-2.045-2.045-2.233-3.928-0.632-6.291
+	                c0.224-0.309,1.65-1.575,2.87-2.596c0.778-0.463,1.312-1.151,1.546-1.995c0.311-1.123,0.082-2.444-0.652-3.731
+	                c-0.173-0.296-4.291-7.27-8.085-9.277c-0.708-0.375-1.506-0.573-2.306-0.573c-1.318,0-2.558,0.514-3.49,1.445L4.7,3.986
+	                c-4.014,4.013-5.467,8.562-4.321,13.52c0.956,4.132,3.742,8.529,8.282,13.068l14.705,14.705c5.746,5.746,11.224,8.66,16.282,8.66
+	                c0,0,0,0,0.001,0c3.72,0,7.188-1.581,10.305-4.698l2.537-2.537C54.033,45.163,54.383,42.833,53.364,40.908z"/>
+                </svg>
+                    <h1 class="card-heading">Contact Number</h1>
+                    <div class="card-content">6303679126 <br><br>Click to Make call</div>
+                </a>
+                <a href='mailto:support@floresinnovative.com'>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	               width="25px" height="25px" viewBox="0 0 511.904 511.904" style="enable-background:new 0 0 511.904 511.904;" xml:space="preserve">
+                    <g>
+	                <g>
+		            <path d="M471.904,62.216H40c-22,0-40,18-40,40v307.472c0,22,18,40,40,40h431.904c22,0,40-18,40-40V102.216
+			        C511.904,80.216,493.904,62.216,471.904,62.216z M40,94.216h431.904c3.904,0,7.112,3.016,7.744,6.768L256.744,287L32.488,99.856
+			        C33.536,96.648,36.496,94.216,40,94.216z M479.904,331.824H351.952v32h127.952v45.864c0,4.336-3.664,8-8,8H40
+			        c-4.336,0-8-3.664-8-8v-93.864h127.952v-32H32V141.12l224.744,187.552l223.16-186.232V331.824z"/>
+	                </g>
+                    </g>
+                </svg>
+                    <h1 class="card-heading">Mail Us</h1>
+                    <div class="card-content">support@floresinnovative.com<br><br>Mail Us</div>
+                </a>
+            </div>
+            <div class="message-get-us">
+                <div class="message-us">
+                    <!-- <div class="intro-heading"> Send Us Message</div> -->
+                    <form action="" method="POST">
+                        {%csrf_token %}
+                    <div class="two-div">
+                        <div class="form">
+                            <input name="name" required/>
+                            <label  class="label-name">
+                                <span class="content-name">Name</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input name="email" required/>
+                            <label  class="label-name">
+                                <span class="content-name">Email</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="two-div">
+                        <div class="form">
+                            <input name="tel" required/>
+                            <label  class="label-name">
+                                <span class="content-name">Phone Number</span>
+                            </label>
+                        </div>
+                        <div class="form">
+                            <input name="company_name" required/>
+                            <label  class="label-name">
+                                <span class="content-name">Company</span>
+                            </label>
+                        </div>
+                    </div>
+
+                        <div class="form" style="width: 100%;">
+                            <input name="subject" required/>
+                            <label  class="label-name">
+                                <span class="content-name">Subject</span>
+                            </label>
+                        </div>
+                    <div class="input-box2">
+                        <label  class="label">Message</label>
+                        <textarea name="message" type="text"></textarea>
+                    </div>
+                    <!-- <div class="submit">Submit</div> -->
+                    <input type="Submit" class="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="get-us">
+                    <div class="get-us-heading intro-heading">Get In Touch</div>
+                    <div class="get-us-content">
+                        There's nothing we love in the world more than hearing from you.Positive stuff,helpful feedback on the site,or just a note about literally anything on your mind. We want to hear it. We promise to respond too,because there is nothing worse than sending a note like this to a company and not hearing back.
+                    </div>
+                    <div class="socialmedia-container2">
+                        <!-- <?xml version="1.0"?><svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg> -->
+                        <a href="https://www.instagram.com/flores_innovative_solutions/"<?xml version="1.0"?><svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg></a>
+                        <a href="https://www.linkedin.com/company/flore-innovative-solutions-private-limited/"<?xml version="1.0"?><svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg></a>
+                        <!-- <?xml version="1.0"?><svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/></svg> -->
+                        <!-- <?xml version="1.0"?><svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"/></svg> -->
+                    </div>
+                 </div>
+            </div>
+            <!-- <p class="cp-text">
+                © Copyright 2015 Company Name. All rights reserved.
+            </p> -->
+            <footer>
+                <p>© Copyright 2021 Flores Innovative Solutions. All rights reserved.</p>
+              </footer>
+        </section>
+        </div>
+        <a id="scroll-top" onclick="topFunction()" href="#">&#8593;</a>
+        </div>
+        <script src="{% static 'js/script.js' %}" ></script>
+        <script src="{% static 'js/menu.js' %}"></script>
+        <script src="{% static 'js/slider.js' %}"></script>
+        
+    </body>
+</html>
