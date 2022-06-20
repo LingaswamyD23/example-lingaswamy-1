@@ -1,0 +1,62 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-color: rgb(32, 32, 32); */
+}
+#scroll-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 22;
+  cursor: pointer;
+  color: black;
+  background-color:grey;
+  font-size: 20px;
+  /* display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  padding:20px;
+  border-radius: 100px;
+  box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+#scroll-top:hover{
+  transform: scale(1.1);
+}
+
+.main-container{
+  position: relative;
+  width: 100%;
+  /* font-family: sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
+}
+.pack{
+    position: relative;
+    background-color: white;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* .cp-text{
+   color: rgba(0,0,0,.7); 
+   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+   background:#777;
+   text-align: center;
+   padding:5%;
+  } */
+  footer {
+    /* padding: 10px 20px; */
+    /* background: #666; */
+    color: black;
+    max-width:fit-content;
+  }
+/* * {
+  box-sizing: border-box;
+} */
