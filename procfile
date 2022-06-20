@@ -1,0 +1,1 @@
+web: gunicorn flores_innovatives.wsgi --log-file -

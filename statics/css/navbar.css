@@ -1,0 +1,110 @@
+#menu-icon{
+    display: none;
+}
+.navbar-container{
+    z-index: 10;
+    position: absolute;
+    padding: 10px 10%;
+    color: white;
+    width: 80%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: none;
+    transition: 0.45s;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+}
+
+.logo-title{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.logo-title img{
+    /* background-color: #cccccc; */
+    width: 50x;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    overflow: hidden;
+}
+.title{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    transition: 0.2s;
+    overflow: hidden;
+    justify-content: end;
+}
+
+.cross-container{
+    max-width: 100%;
+    min-width: 95%;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.button{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items:left;
+    overflow: hidden;
+}
+
+.button:hover{
+    color:#EC994B;
+}
+
+#menu-icon{
+    cursor: pointer;
+}
+
+#menu-icon svg{
+    fill: white;
+}
+.cross-ctn{
+    display: none;
+}
+.cross-ctn svg{
+    cursor: pointer;
+}
+@media (max-width: 890px){
+    .buttons-container{
+        align-items: center;
+        color: black;
+        background-color: white;
+        height: 100vh;
+        width: 0%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .cross-ctn{
+        max-width: 100%;
+        min-width: 95%;
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
